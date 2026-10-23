@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Converted outputs live in internal app storage and are shared from here. -->
+    <files-path name="outputs" path="outputs/" />
+    <!-- Camera capture temp images for Scan to PDF. -->
+    <cache-path name="captures" path="captures/" />
+</paths>

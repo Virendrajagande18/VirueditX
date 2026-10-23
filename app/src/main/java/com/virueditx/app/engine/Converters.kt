@@ -606,7 +606,7 @@ suspend fun compressPdfToTarget(
         val done = Converters.uniqueFile(outDir, outputName.ifBlank { "Under1MB" }, "pdf")
         src.copyTo(done, overwrite = true)
         src.delete()
-        return TargetCompressResult(OutputResult(requireRealFileTop(done)), true, targetBytes)
+        return@withContext TargetCompressResult(OutputResult(requireRealFileTop(done)), true, targetBytes)
     }
     var best: File? = null
 
